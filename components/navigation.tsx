@@ -28,12 +28,12 @@ const NavLink = (props: NavLinkProps) => (
       variant="nav"
       _focus={{
         background: useColorModeValue("gray.100", "gray.700"),
-        color: useColorModeValue("#D43900", "white"),
+        color: useColorModeValue("orange.shea", "white"),
         textDecoration: "none"
       }}
       _hover={{
         background: useColorModeValue("gray.100", "gray.700"),
-        color: useColorModeValue("#D43900", "white"),
+        color: useColorModeValue("orange.shea", "white"),
         textDecoration: "none"
       }}
       {...props}
@@ -52,12 +52,15 @@ const Navigation = () => {
     <SimpleGrid
       alignItems="center"
       as="nav"
-      background={useColorModeValue("#D43900", "gray.900")}
+      background={useColorModeValue("orange.shea", "gray.900")}
       columns={{ base: 2, md: 3 }}
       height={16}
       justifyContent="space-between"
-      spacing={10}
       paddingX={4}
+      position="fixed"
+      spacing={10}
+      width="100%"
+      zIndex={100}
     >
       {/* Name */}
       <Flex justifyContent="flex-start">
@@ -81,7 +84,7 @@ const Navigation = () => {
 
       {/* Mobile menu content */}
       <Flex
-        backgroundColor={useColorModeValue("#D43900", "gray.900")}
+        backgroundColor={useColorModeValue("orange.shea", "gray.900")}
         display={display}
         flexDirection="column"
         height="100vh"

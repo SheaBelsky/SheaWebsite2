@@ -1,6 +1,11 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const chakraTheme = extendTheme({
+  colors: {
+    orange: {
+      shea: "#D43900"
+    }
+  },
   components: {
     Link: {
       baseStyle: {

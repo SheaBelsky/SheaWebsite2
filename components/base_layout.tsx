@@ -24,7 +24,7 @@ const BaseLayout = (props: Props) => {
           content="Belsky, Shea, Shea Belsky, Shea Hunter Belsky, Shea H Belsky, shea belsky, shbelsky, sbelsky, sheabelsky, SHEA BELSKY, Mentra, AxisAbility"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#D43900" />
+        <meta name="theme-color" content="orange.shea" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <NextSeo
@@ -42,13 +42,14 @@ const BaseLayout = (props: Props) => {
       <SkipNavContent>
         <Flex
           as="main"
-          height="calc(100vh - 4rem)"
           justifyContent="center"
           margin="auto"
           maxWidth={{
             base: "90%",
             md: "1000px"
           }}
+          position="relative"
+          top={24}
         >
           {props.children}
         </Flex>

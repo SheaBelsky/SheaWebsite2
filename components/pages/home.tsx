@@ -10,8 +10,6 @@ const HomeComponent = () => {
       borderRadius="5px"
       flexDirection={{ base: "column", md: "row" }}
       justifyContent="center"
-      justifySelf="center"
-      marginTop={{ base: "100px", md: "0" }}
       padding="20px"
       width="80%"
     >
