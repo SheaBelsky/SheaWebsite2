@@ -114,7 +114,7 @@ const Navigation = () => {
           justifyContent="space-between"
         >
           <NavLink href="/photography">Photography</NavLink>
-          <NavLink href="/resume" isExternal>
+          <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
             Resumé
           </NavLink>
           <NavLink href="/work">Work</NavLink>
@@ -127,7 +127,7 @@ const Navigation = () => {
         justifyContent="space-between"
       >
         <NavLink href="/photography">Photography</NavLink>
-        <NavLink href="/resume" isExternal>
+        <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
           Resumé
         </NavLink>
         <NavLink href="/work">Work</NavLink>

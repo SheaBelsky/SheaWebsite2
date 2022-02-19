@@ -1,6 +1,6 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 
-const chakraTheme = extendTheme({
+const chakraTheme: ThemeConfig = extendTheme({
   colors: {
     orange: {
       shea: "#D43900"
@@ -23,7 +23,8 @@ const chakraTheme = extendTheme({
         }
       }
     }
-  }
+  },
+  useSystemColorMode: true
 });
 
 export default chakraTheme;

@@ -38,6 +38,7 @@ const PhotographyComponent = () => {
               alt={photo.alt}
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
               priority
               src={photo.src}
             />
