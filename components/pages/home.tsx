@@ -1,11 +1,5 @@
-import {
-  Flex,
-  Heading,
-  Image,
-  Link,
-  Text,
-  useColorModeValue
-} from "@chakra-ui/react";
+import { Flex, Heading, Link, Text, useColorModeValue } from "@chakra-ui/react";
+import Image from "next/image";
 
 const HomeComponent = () => {
   return (
@@ -55,6 +49,8 @@ const HomeComponent = () => {
         <Image
           alt="Shea Belsky wearing a Pac-Man suit & tie against an orange background"
           height={200}
+          layout="fixed"
+          priority
           src="/shea_headshot.jpg"
           width={200}
         />

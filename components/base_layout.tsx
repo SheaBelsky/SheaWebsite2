@@ -12,6 +12,9 @@ interface Props {
 }
 
 const BaseLayout = (props: Props) => {
+  const description = `Shea Belsky${
+    props.description ? ` - ${props.description}` : ""
+  }`;
   return (
     <Fragment>
       <Head>
@@ -25,9 +28,9 @@ const BaseLayout = (props: Props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <NextSeo
-        description={props.description}
+        description={description}
         openGraph={{
-          description: props.description,
+          description,
           title: props.title,
           type: "website",
           url: typeof window !== "undefined" ? window.location.href : undefined
