@@ -1,4 +1,11 @@
-import { Box, Heading, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Link,
+  ListItem,
+  Text,
+  UnorderedList
+} from "@chakra-ui/react";
 import { Fragment } from "react";
 import type { WorkShape } from "../../lib/work_data";
 
@@ -12,7 +19,15 @@ const WorkDetailPage = (props: WorkShape) => (
       {props.dates}
     </Heading>
     <Box alignSelf="flex-start" marginTop="20px">
-      {props.description}
+      {Array.isArray(props.description) ? (
+        props.description.map((text) => (
+          <Text key={text} marginTop="10px">
+            {text}
+          </Text>
+        ))
+      ) : (
+        <Text>{props.description}</Text>
+      )}
 
       {props.readingLinks.length > 0 && (
         <Fragment>
