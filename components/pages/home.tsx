@@ -1,6 +1,11 @@
-import { Flex, Heading, Link, Text, useColorModeValue } from "@chakra-ui/react";
-import { customImageLoader } from "../../lib/utils";
-import Image from "next/image";
+import {
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+  useColorModeValue
+} from "@chakra-ui/react";
 
 const HomeComponent = () => {
   return (
@@ -50,9 +55,6 @@ const HomeComponent = () => {
         <Image
           alt="Shea Belsky wearing a Pac-Man suit & tie against an orange background"
           height={200}
-          layout="fixed"
-          loader={customImageLoader}
-          priority
           src="/shea_headshot.jpg"
           width={200}
         />
