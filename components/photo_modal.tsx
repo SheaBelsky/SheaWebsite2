@@ -9,6 +9,8 @@ import {
 import Image from "next/image";
 import type { ImageShape } from "../lib/photo_data";
 
+// TODO: Get larger version of these photos?
+
 interface Props {
   activePhoto: ImageShape | null;
   handleClose: () => void;
