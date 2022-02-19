@@ -2,7 +2,7 @@
 const debug = process.env.NODE_ENV !== 'production'
 
 const nextConfig = {
-  assetPrefix: !debug ? '/sheawebsite2/' : '',
+  assetPrefix: !debug ? '/SheaWebsite2/' : '',
   images: {
     loader: "custom",
   },
