@@ -1,14 +1,9 @@
-import {
-  Box,
-  Button,
-  Heading,
-  SimpleGrid,
-  useColorModeValue
-} from "@chakra-ui/react";
+import { Button, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Fragment, useCallback, useState } from "react";
 import PHOTO_DATA, { ImageShape } from "../../lib/photo_data";
-import { useCallback, useState } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+
 const DynamicPhotoModal = dynamic(import("../photo_modal"));
 
 const PhotographyComponent = () => {
@@ -20,16 +15,7 @@ const PhotographyComponent = () => {
     setActivePhoto(null);
   }, []);
   return (
-    <Box
-      alignItems="center"
-      backgroundColor={useColorModeValue("gray.100", "black")}
-      borderRadius="5px"
-      display="flex"
-      flexDirection={{ base: "column" }}
-      justifySelf="center"
-      padding="20px"
-      width="80%"
-    >
+    <Fragment>
       <Heading as="h1">Photography</Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} marginTop="20px" spacing={10}>
         {Object.values(PHOTO_DATA).map((photo) => (
@@ -42,10 +28,10 @@ const PhotographyComponent = () => {
             position="relative"
             width="200px"
             _focus={{
-              boxShadow: "0px 0px 10px 0px #D43900"
+              opacity: 0.7
             }}
             _hover={{
-              boxShadow: "0px 0px 10px 0px #D43900"
+              opacity: 0.7
             }}
           >
             <Image
@@ -63,7 +49,7 @@ const PhotographyComponent = () => {
         handleClose={handleCloseModal}
         isOpen={!!activePhoto}
       />
-    </Box>
+    </Fragment>
   );
 };
 

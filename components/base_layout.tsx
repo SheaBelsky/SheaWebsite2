@@ -1,6 +1,6 @@
+import { Flex, StyleProps, useColorModeValue } from "@chakra-ui/react";
 import { Fragment, ReactNode } from "react";
 import { SkipNavContent, SkipNavLink } from "@chakra-ui/skip-nav";
-import { Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import Navigation from "./navigation";
 import { NextSeo } from "next-seo";
@@ -9,6 +9,7 @@ interface Props {
   children: ReactNode;
   description: string;
   title: string;
+  wrapperStyleProps?: StyleProps;
 }
 
 const BaseLayout = (props: Props) => {
@@ -31,11 +32,11 @@ const BaseLayout = (props: Props) => {
         description={description}
         openGraph={{
           description,
-          title: props.title,
+          title: `Shea Belsky - ${props.title}`,
           type: "website",
           url: typeof window !== "undefined" ? window.location.href : undefined
         }}
-        title={props.title}
+        title={`Shea Belsky - ${props.title}`}
       />
       <SkipNavLink>Skip to main content</SkipNavLink>
       <Navigation />
@@ -51,7 +52,17 @@ const BaseLayout = (props: Props) => {
           position="relative"
           top={24}
         >
-          {props.children}
+          <Flex
+            alignItems="center"
+            backgroundColor={useColorModeValue("gray.100", "black")}
+            borderRadius="5px"
+            flexDirection="column"
+            padding="20px"
+            width="80%"
+            {...(props.wrapperStyleProps || {})}
+          >
+            {props.children}
+          </Flex>
         </Flex>
       </SkipNavContent>
     </Fragment>
