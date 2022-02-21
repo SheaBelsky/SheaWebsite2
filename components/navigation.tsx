@@ -44,7 +44,6 @@ const NavLink = (props: NavLinkProps) => (
 );
 
 const Navigation = () => {
-  // TODO: Set color mode based on prefers-color-scheme
   const { colorMode, toggleColorMode } = useColorMode();
   const [display, changeDisplay] = useState("none");
 
