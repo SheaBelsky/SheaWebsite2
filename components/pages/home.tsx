@@ -12,14 +12,14 @@ const HomeComponent = () => (
       <Heading as="h1">Hi, I'm Shea Hunter Belsky!</Heading>
       <Text marginTop="20px">
         I'm an autistic software engineer, focused on building equity and
-        inclusion for the neurodiverse.
+        inclusion for everyone.
       </Text>
       <Text marginTop="20px">
         I'm the Chief Technology Officer for{" "}
         <Link href="https://www.mentra.me" isExternal>
           Mentra
         </Link>
-        , a startup connecting neurodiverse jobseekers with meaningful
+        , a startup connecting neurodivergent jobseekers with meaningful
         employment.
       </Text>
       <Text marginTop="20px">
@@ -28,6 +28,13 @@ const HomeComponent = () => (
           LinkedIn
         </Link>{" "}
         or <Link href="mailto:hello@sheabelsky.com">email</Link>!
+      </Text>
+      <Text marginTop="20px">
+        You can also find me on{" "}
+        <Link href="https://github.com/SheaBelsky" isExternal>
+          GitHub
+        </Link>
+        !
       </Text>
     </Flex>
     <Flex

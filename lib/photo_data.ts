@@ -8,6 +8,7 @@ import GavinInvert from "../public/photography/gavin_invert.jpg";
 import KillingtonFog from "../public/photography/killington_fog.jpg";
 import KirkLakeSunset from "../public/photography/kirk_lake_sunset.jpg";
 import Neowise from "../public/photography/neowise.jpg";
+import type { StaticImageData } from "next/image";
 
 export interface ImageShape {
   alt: string;
