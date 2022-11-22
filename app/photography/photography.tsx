@@ -1,19 +1,19 @@
+"use client";
 import { Button, Heading, SimpleGrid } from "@chakra-ui/react";
-import { Fragment, useCallback, useState } from "react";
-import PHOTO_DATA, { ImageShape } from "../../lib/photo_data";
-import dynamic from "next/dynamic";
+import { Fragment, useState } from "react";
+import PHOTO_DATA, { type ImageShape } from "../../lib/photo_data";
 import Image from "next/image";
-
-const DynamicPhotoModal = dynamic(import("../photo_modal"));
+// Dynamic imports don't work well in Next.js 13. Need to debug this more.
+import PhotoModal from "../../components/photo_modal";
 
 const PhotographyComponent = () => {
   const [activePhoto, setActivePhoto] = useState<ImageShape | null>(null);
-  const handleClickPhoto = useCallback((photo: ImageShape) => {
+  const handleClickPhoto = (photo: ImageShape) => {
     setActivePhoto(photo);
-  }, []);
-  const handleCloseModal = useCallback(() => {
+  };
+  const handleCloseModal = () => {
     setActivePhoto(null);
-  }, []);
+  };
   return (
     <Fragment>
       <Heading as="h1">Photography</Heading>
@@ -36,16 +36,18 @@ const PhotographyComponent = () => {
           >
             <Image
               alt={photo.alt}
-              layout="fill"
-              objectFit="cover"
               placeholder="blur"
               priority
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              style={{ height: "100%", objectFit: "cover" }}
               src={photo.src}
             />
           </Button>
         ))}
       </SimpleGrid>
-      <DynamicPhotoModal
+      <PhotoModal
         activePhoto={activePhoto}
         handleClose={handleCloseModal}
         isOpen={!!activePhoto}

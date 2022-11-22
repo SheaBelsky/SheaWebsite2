@@ -19,28 +19,27 @@ interface NavLinkProps extends LinkProps {
 }
 
 const NavLink = (props: NavLinkProps) => (
-  <NextLink href={props.href} passHref>
-    <Link
-      fontSize={{ base: "30px", md: "inherit" }}
-      paddingX={2}
-      paddingY={1}
-      rounded="md"
-      variant="nav"
-      _focus={{
-        background: useColorModeValue("gray.100", "gray.700"),
-        color: useColorModeValue("orange.shea", "white"),
-        textDecoration: "none"
-      }}
-      _hover={{
-        background: useColorModeValue("gray.100", "gray.700"),
-        color: useColorModeValue("orange.shea", "white"),
-        textDecoration: "none"
-      }}
-      {...props}
-    >
-      {props.children}
-    </Link>
-  </NextLink>
+  <Link
+    as={NextLink}
+    fontSize={{ base: "30px", md: "inherit" }}
+    paddingX={2}
+    paddingY={1}
+    rounded="md"
+    variant="nav"
+    _focus={{
+      background: useColorModeValue("gray.100", "gray.700"),
+      color: useColorModeValue("orange.shea", "white"),
+      textDecoration: "none"
+    }}
+    _hover={{
+      background: useColorModeValue("gray.100", "gray.700"),
+      color: useColorModeValue("orange.shea", "white"),
+      textDecoration: "none"
+    }}
+    {...props}
+  >
+    {props.children}
+  </Link>
 );
 
 const Navigation = () => {
@@ -116,6 +115,7 @@ const Navigation = () => {
           <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
             Resumé
           </NavLink>
+          <NavLink href="/talks">Talks</NavLink>
           <NavLink href="/work">Work</NavLink>
         </Flex>
       </Flex>
@@ -129,6 +129,7 @@ const Navigation = () => {
         <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
           Resumé
         </NavLink>
+        <NavLink href="/talks">Talks</NavLink>
         <NavLink href="/work">Work</NavLink>
       </Flex>
 

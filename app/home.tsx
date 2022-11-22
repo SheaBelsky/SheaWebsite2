@@ -1,3 +1,4 @@
+"use client";
 import { Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { Fragment } from "react";
 import Image from "next/image";
@@ -45,7 +46,6 @@ const HomeComponent = () => (
       <Image
         alt="Shea Belsky wearing a Pac-Man suit & tie against an orange background"
         height={200}
-        layout="fixed"
         priority
         src="/shea_headshot.jpg"
         width={200}
