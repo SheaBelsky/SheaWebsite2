@@ -1,6 +1,6 @@
 import { Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { Fragment } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const HomeComponent = () => (
   <Fragment>

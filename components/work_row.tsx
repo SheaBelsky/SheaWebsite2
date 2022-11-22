@@ -1,6 +1,6 @@
+import type { WorkKey } from "../lib/work_data";
 import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
-import type { WorkKey } from "../lib/work_data";
 
 interface Props {
   backgroundColor: string;
@@ -14,32 +14,32 @@ interface Props {
 // and moving shared styles there, that way we don't generate a new CSS
 // class for every row
 const WorkRow = (props: Props) => (
-  <NextLink href={`/work/${props.workKey}`} passHref legacyBehavior>
-    <Box
-      as="a"
-      backgroundColor={props.backgroundColor}
-      color={useColorModeValue("white", "white")}
-      display="inline"
-      padding="20px 10px"
-      _focus={{
-        opacity: 0.7
-      }}
-      _hover={{
-        opacity: 0.7
-      }}
-      transition="0.1s opacity linear"
-    >
-      <Heading as="h2" fontWeight="extrabold" size="md">
-        {props.company}
-      </Heading>
-      <Heading as="h3" size="sm">
-        {props.title}
-      </Heading>
-      <Heading as="h4" fontWeight="light" size="xs">
-        {props.dates}
-      </Heading>
-    </Box>
-  </NextLink>
+  <Box
+    aria-label={`${props.company}, ${props.title}, ${props.dates}`}
+    as={NextLink}
+    href={`/work/${props.workKey}`}
+    backgroundColor={props.backgroundColor}
+    color={useColorModeValue("white", "white")}
+    display="inline"
+    padding="20px 10px"
+    _focus={{
+      opacity: 0.7
+    }}
+    _hover={{
+      opacity: 0.7
+    }}
+    transition="0.1s opacity linear"
+  >
+    <Heading as="span" display="block" fontWeight="extrabold" size="md">
+      {props.company}
+    </Heading>
+    <Heading as="span" display="block" size="sm">
+      {props.title}
+    </Heading>
+    <Heading as="span" display="block" fontWeight="light" size="xs">
+      {props.dates}
+    </Heading>
+  </Box>
 );
 
 export default WorkRow;

@@ -2,7 +2,7 @@ import { Button, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Fragment, useCallback, useState } from "react";
 import PHOTO_DATA, { ImageShape } from "../../lib/photo_data";
 import dynamic from "next/dynamic";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const DynamicPhotoModal = dynamic(import("../photo_modal"));
 
