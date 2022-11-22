@@ -42,20 +42,6 @@
         "minKeys": 2,
         "natural": true
       }
-    ],
-    "sort-imports": [
-      "error",
-      {
-        "ignoreCase": true,
-        "ignoreDeclarationSort": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": [
-          "multiple",
-          "single",
-          "all",
-          "none"
-        ]
-      }
     ]
   }
 }
