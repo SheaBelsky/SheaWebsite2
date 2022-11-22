@@ -19,7 +19,7 @@ interface NavLinkProps extends LinkProps {
 }
 
 const NavLink = (props: NavLinkProps) => (
-  <NextLink href={props.href} passHref>
+  <NextLink href={props.href} passHref legacyBehavior>
     <Link
       fontSize={{ base: "30px", md: "inherit" }}
       paddingX={2}

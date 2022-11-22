@@ -14,7 +14,7 @@ interface Props {
 // and moving shared styles there, that way we don't generate a new CSS
 // class for every row
 const WorkRow = (props: Props) => (
-  <NextLink href={`/work/${props.workKey}`} passHref>
+  <NextLink href={`/work/${props.workKey}`} passHref legacyBehavior>
     <Box
       as="a"
       backgroundColor={props.backgroundColor}
