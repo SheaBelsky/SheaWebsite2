@@ -1,3 +1,5 @@
+"use client";
+import type { ImageShape } from "../lib/photo_data";
 import {
   Modal,
   ModalBody,
@@ -7,7 +9,6 @@ import {
   ModalOverlay
 } from "@chakra-ui/react";
 import Image from "next/image";
-import type { ImageShape } from "../lib/photo_data";
 
 // TODO: Get larger version of these photos?
 

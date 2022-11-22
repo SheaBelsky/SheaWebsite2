@@ -1,3 +1,4 @@
+"use client";
 import {
   Box,
   Heading,
@@ -7,7 +8,7 @@ import {
   UnorderedList
 } from "@chakra-ui/react";
 import { Fragment } from "react";
-import type { WorkShape } from "../../lib/work_data";
+import type { WorkShape } from "../../../lib/work_data";
 
 const WorkDetailPage = (props: WorkShape) => (
   <Fragment>

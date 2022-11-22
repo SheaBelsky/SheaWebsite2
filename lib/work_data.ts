@@ -10,7 +10,7 @@ export interface WorkShape {
   title: string;
 }
 
-export type WorkKey =
+export type WorkId =
   | "hubspot"
   | "ezra"
   | "google"
@@ -18,7 +18,7 @@ export type WorkKey =
   | "mentra"
   | "wayfair";
 
-const WORK_DATA: Record<WorkKey, WorkShape> = {
+const WORK_DATA: Record<WorkId, WorkShape> = {
   ezra: {
     company: "Ezra",
     dates: "October 2016 - May 2020",
@@ -137,5 +137,9 @@ const WORK_DATA: Record<WorkKey, WorkShape> = {
     title: "Engineer II, Tech Lead"
   }
 };
+
+export const workDataKeysForRoutes = Object.keys(WORK_DATA).map((workId) => ({
+  workId
+}));
 
 export default WORK_DATA;

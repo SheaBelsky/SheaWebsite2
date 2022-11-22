@@ -115,6 +115,7 @@ const Navigation = () => {
           <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
             Resumé
           </NavLink>
+          <NavLink href="/talks">Talks</NavLink>
           <NavLink href="/work">Work</NavLink>
         </Flex>
       </Flex>
@@ -128,6 +129,7 @@ const Navigation = () => {
         <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
           Resumé
         </NavLink>
+        <NavLink href="/talks">Talks</NavLink>
         <NavLink href="/work">Work</NavLink>
       </Flex>
 

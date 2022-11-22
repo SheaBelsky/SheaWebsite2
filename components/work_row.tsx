@@ -1,25 +1,25 @@
-import type { WorkKey } from "../lib/work_data";
 import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 interface Props {
   backgroundColor: string;
-  company: string;
   dates: string;
+  href: string;
+  linkVariant: "next" | "basic";
+  subtitle: string;
   title: string;
-  workKey: WorkKey;
 }
 
-// TODO: Could optimize this by creating a custom Box variant
-// and moving shared styles there, that way we don't generate a new CSS
-// class for every row
 const WorkRow = (props: Props) => (
   <Box
-    aria-label={`${props.company}, ${props.title}, ${props.dates}`}
-    as={NextLink}
-    href={`/work/${props.workKey}`}
+    aria-label={`${props.title}, ${props.subtitle}, ${props.dates}${
+      props.linkVariant === "basic" ? " (Opens in a new tab)" : ""
+    }`}
+    as={props.linkVariant === "next" ? NextLink : "a"}
+    href={props.href}
     backgroundColor={props.backgroundColor}
     color={useColorModeValue("white", "white")}
+    cursor="pointer"
     display="inline"
     padding="20px 10px"
     _focus={{
@@ -29,12 +29,22 @@ const WorkRow = (props: Props) => (
       opacity: 0.7
     }}
     transition="0.1s opacity linear"
+    {...(props.linkVariant === "basic" && {
+      rel: "noopener noreferrer",
+      target: "_blank"
+    })}
   >
-    <Heading as="span" display="block" fontWeight="extrabold" size="md">
-      {props.company}
-    </Heading>
-    <Heading as="span" display="block" size="sm">
+    <Heading
+      as="span"
+      display="block"
+      fontWeight="extrabold"
+      minHeight="72px"
+      size="md"
+    >
       {props.title}
+    </Heading>
+    <Heading as="span" display="block" paddingY={2} size="sm">
+      {props.subtitle}
     </Heading>
     <Heading as="span" display="block" fontWeight="light" size="xs">
       {props.dates}
