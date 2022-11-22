@@ -1,4 +1,3 @@
-import BaseLayout from "../../../components/base_layout";
 import WORK_DATA, {
   workDataKeysForRoutes,
   WorkId
@@ -15,11 +14,7 @@ export function generateStaticParams() {
 
 const WorkDetailPage = (props: Props) => {
   const workData = WORK_DATA[props.params.workId as WorkId];
-  return (
-    <BaseLayout>
-      <WorkDetailPageComponent {...workData} />
-    </BaseLayout>
-  );
+  return <WorkDetailPageComponent {...workData} />;
 };
 
 export default WorkDetailPage;

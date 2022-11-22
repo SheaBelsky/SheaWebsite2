@@ -1,4 +1,4 @@
-import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 interface Props {
@@ -18,7 +18,7 @@ const WorkRow = (props: Props) => (
     as={props.linkVariant === "next" ? NextLink : "a"}
     href={props.href}
     backgroundColor={props.backgroundColor}
-    color={useColorModeValue("white", "white")}
+    color="white"
     cursor="pointer"
     display="inline"
     padding="20px 10px"

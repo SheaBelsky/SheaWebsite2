@@ -24,7 +24,7 @@ const chakraTheme: ThemeConfig = extendTheme({
       }
     }
   },
-  initialColorMode: "system",
+  initialColorMode: "dark",
   useSystemColorMode: true
 });
 

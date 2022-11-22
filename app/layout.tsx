@@ -1,8 +1,6 @@
-"use client";
 import type { ReactNode } from "react";
-import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { GA_TRACKING_ID } from "../lib/gtag";
-import chakraTheme from "../lib/theme";
+import Providers from "./providers";
 
 interface Props {
   children: ReactNode;
@@ -38,8 +36,7 @@ const IndexLayout = (props: Props) => {
         />
       </head>
       <body>
-        <ColorModeScript initialColorMode={chakraTheme.initialColorMode} />
-        <ChakraProvider theme={chakraTheme}>{props.children}</ChakraProvider>
+        <Providers>{props.children}</Providers>
       </body>
     </html>
   );

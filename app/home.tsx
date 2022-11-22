@@ -1,10 +1,13 @@
 "use client";
-import { Flex, Heading, Link, Text } from "@chakra-ui/react";
-import { Fragment } from "react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const HomeComponent = () => (
-  <Fragment>
+  <Box
+    display="flex"
+    flexDirection={{ base: "column", md: "row" }}
+    justifyContent="space-between"
+  >
     <Flex
       flexDirection="column"
       order={{ base: 2, md: 1 }}
@@ -38,20 +41,18 @@ const HomeComponent = () => (
         !
       </Text>
     </Flex>
-    <Flex
-      justifyContent="center"
-      order={{ base: 1, md: 2 }}
-      width={{ base: "100%", md: "30%" }}
-    >
-      <Image
-        alt="Shea Belsky wearing a Pac-Man suit & tie against an orange background"
-        height={200}
-        priority
-        src="/shea_headshot.jpg"
-        width={200}
-      />
+    <Flex order={{ base: 1, md: 2 }} width={{ base: "100%", md: "30%" }}>
+      <Box alignItems="center" display="flex" justifyContent="center">
+        <Image
+          alt="Shea Belsky wearing a Pac-Man suit & tie against an orange background"
+          height="200"
+          priority
+          src="/shea_headshot.jpg"
+          width="200"
+        />
+      </Box>
     </Flex>
-  </Fragment>
+  </Box>
 );
 
 export default HomeComponent;
