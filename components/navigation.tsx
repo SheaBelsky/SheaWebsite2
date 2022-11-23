@@ -134,7 +134,7 @@ const Navigation = () => {
       </Flex>
 
       {/* Desktop Light/Dark Mode toggle */}
-      <Flex display={{ base: "none", md: "flex" }} justifyContent="flex-end">
+      {/* <Flex display={{ base: "none", md: "flex" }} justifyContent="flex-end">
         <Button
           aria-label={
             colorMode === "light" ? "Turn to dark mode" : "Turn to light mode"
@@ -143,7 +143,7 @@ const Navigation = () => {
         >
           {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
         </Button>
-      </Flex>
+      </Flex> */}
     </SimpleGrid>
   );
 };
