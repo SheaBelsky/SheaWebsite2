@@ -11,6 +11,14 @@ const TalksComponent = () => {
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="#105CAB"
+          dates="December 20, 2022"
+          href="https://ndmc.pyd.org/fellowship/college-to-career-transition-resources-mentra-a-neurodiversity-employment-network/"
+          linkVariant="basic"
+          subtitle="National Disability Mentoring Coalition"
+          title="College to Career Transition Resources: Mentra: A Neurodiversity Employment Network"
+        />
+        <WorkRow
           backgroundColor="green.500"
           dates="August 18, 2022"
           href="https://www.jbbbs.org/an-autistic-connection-a-friendship-fueled-by-shared-experiences/"
@@ -73,6 +81,14 @@ const TalksComponent = () => {
           linkVariant="basic"
           subtitle="Cornell University"
           title="Spotlight: Shea Belsky (Info Sci '18, MPS '18)"
+        />
+        <WorkRow
+          backgroundColor="#073949"
+          dates="September, 2018"
+          href="https://www.engineering.cornell.edu/students-code-cornell-community"
+          linkVariant="basic"
+          subtitle="Cornell Engineering"
+          title="Students code for the Cornell community"
         />
       </SimpleGrid>
     </Fragment>
