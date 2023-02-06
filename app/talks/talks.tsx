@@ -11,6 +11,22 @@ const TalksComponent = () => {
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="#120c0f"
+          dates="February 1, 2022"
+          href="https://anchor.fm/glich/episodes/E25---Neurodivergence-and-the-tech-industry-e1tilou"
+          linkVariant="basic"
+          subtitle="Episode #25 - Neurodivergence and the tech industry"
+          title="Podcast: glich.podcast"
+        />
+        <WorkRow
+          backgroundColor="#7d46b4"
+          dates="January 16, 2022"
+          href="https://anchor.fm/assemblinginclusion/episodes/027-Mentra-e1thhtr"
+          linkVariant="basic"
+          subtitle="Episode #27 - Mentra"
+          title="Podcast: Assembling Inclusion"
+        />
+        <WorkRow
           backgroundColor="#105CAB"
           dates="December 20, 2022"
           href="https://ndmc.pyd.org/fellowship/college-to-career-transition-resources-mentra-a-neurodiversity-employment-network/"
