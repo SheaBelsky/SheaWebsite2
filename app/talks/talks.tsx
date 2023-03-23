@@ -1,5 +1,5 @@
 "use client";
-import { Heading, SimpleGrid } from "@chakra-ui/react";
+import { Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
 import { Fragment } from "react";
 import WorkRow from "../../components/work_row";
 
@@ -9,6 +9,16 @@ const TalksComponent = () => {
       <Heading as="h1" marginBottom="20px">
         Talks and Written Work
       </Heading>
+      <Text marginY={5}>
+        I love talking about my lived experiences as a neurodivergent leader and
+        peer. If your organization wants to empower their employees and managers
+        to be more neuroinclusive, please reach out to me at{" "}
+        <Link href="mailto:hello@sheabelsky.com">hello@sheabelsky.com</Link>.
+      </Text>
+      <Text marginY={5}>
+        Below is a list of my speaking engagements, written work, podcasts, and
+        other places where I've been featured!
+      </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
           backgroundColor="green.800"
@@ -19,12 +29,28 @@ const TalksComponent = () => {
           title="Podcast: You're Not Qualified"
         />
         <WorkRow
+          backgroundColor="red.700"
+          dates="February 15, 2023"
+          href="https://www.eventbrite.com/e/shea-belsky-cto-speaker-event-tickets-513141188107"
+          linkVariant="basic"
+          subtitle="Northeastern University"
+          title="Fireside Chat with Graduate Students in Engineering"
+        />
+        <WorkRow
           backgroundColor="#120c0f"
           dates="February 1, 2023"
           href="https://anchor.fm/glich/episodes/E25---Neurodivergence-and-the-tech-industry-e1tilou"
           linkVariant="basic"
           subtitle="Episode #25 - Neurodivergence and the tech industry"
           title="Podcast: glich"
+        />
+        <WorkRow
+          backgroundColor="blue.300"
+          dates="January 26, 2023"
+          href="https://www.instagram.com/p/Co7-Q9qBa3U/"
+          linkVariant="basic"
+          subtitle="3LPlace"
+          title="Talk with Neurodivergent Adults and Advocates"
         />
         <WorkRow
           backgroundColor="#7d46b4"

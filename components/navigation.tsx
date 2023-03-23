@@ -1,15 +1,13 @@
 import {
-  Button,
   chakra,
   Flex,
   IconButton,
   Link,
   LinkProps,
   SimpleGrid,
-  useColorMode,
   useColorModeValue
 } from "@chakra-ui/react";
-import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { ReactNode, useState } from "react";
 import NextLink from "next/link";
 
@@ -22,7 +20,7 @@ const NavLink = (props: NavLinkProps) => (
   <Link
     as={NextLink}
     fontSize={{ base: "30px", md: "inherit" }}
-    paddingX={2}
+    paddingX={4}
     paddingY={1}
     rounded="md"
     variant="nav"
@@ -43,7 +41,6 @@ const NavLink = (props: NavLinkProps) => (
 );
 
 const Navigation = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
   const [display, changeDisplay] = useState("none");
 
   return (
@@ -115,7 +112,7 @@ const Navigation = () => {
           <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
             Resumé
           </NavLink>
-          <NavLink href="/talks">Talks</NavLink>
+          <NavLink href="/talks">Speaking</NavLink>
           <NavLink href="/work">Work</NavLink>
         </Flex>
       </Flex>
@@ -129,7 +126,7 @@ const Navigation = () => {
         <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
           Resumé
         </NavLink>
-        <NavLink href="/talks">Talks</NavLink>
+        <NavLink href="/talks">Speaking</NavLink>
         <NavLink href="/work">Work</NavLink>
       </Flex>
 
