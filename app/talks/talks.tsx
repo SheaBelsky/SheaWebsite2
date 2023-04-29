@@ -21,6 +21,22 @@ const TalksComponent = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="blue.800"
+          dates="April 27, 2023"
+          href="https://open.spotify.com/episode/62MM2ZkkMnxVZkUGdMhQsK"
+          linkVariant="basic"
+          subtitle="Shea Belsky, Mentra and Thoughts on Living Life with Autism"
+          title="Podcast: Atypical Parenting"
+        />
+        <WorkRow
+          backgroundColor="purple.800"
+          dates="March 3, 2023"
+          href="https://open.spotify.com/episode/72PvUSNsJacdAQUGDuvQOC"
+          linkVariant="basic"
+          subtitle="Human Resources"
+          title="Podcast: Neurodiverse Noise"
+        />
+        <WorkRow
           backgroundColor="green.800"
           dates="February 23, 2023"
           href="https://open.spotify.com/episode/3xW5vwAGKCTw7xWp3JNBfe"
