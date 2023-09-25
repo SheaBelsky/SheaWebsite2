@@ -108,10 +108,10 @@ const Navigation = () => {
           height="50%"
           justifyContent="space-between"
         >
-          <NavLink href="/photography">Photography</NavLink>
-          <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
-            Resume
+          <NavLink href="/shea_belsky_one_sheet.pdf" isExternal>
+            One Sheet
           </NavLink>
+          <NavLink href="/photography">Photography</NavLink>
           <NavLink href="/talks">Speaking</NavLink>
           <NavLink href="/news">In the News</NavLink>
           <NavLink href="/work">Work</NavLink>
@@ -123,10 +123,10 @@ const Navigation = () => {
         display={{ base: "none", md: "flex" }}
         justifyContent="space-between"
       >
-        <NavLink href="/photography">Photography</NavLink>
-        <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
-          Resume
+        <NavLink href="/shea_belsky_one_sheet.pdf" isExternal>
+          One Sheet
         </NavLink>
+        <NavLink href="/photography">Photography</NavLink>
         <NavLink href="/talks">Speaking</NavLink>
         <NavLink href="/news">In the News</NavLink>
         <NavLink href="/work">Work</NavLink>
