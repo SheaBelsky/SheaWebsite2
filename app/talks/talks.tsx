@@ -30,6 +30,14 @@ const TalksComponent = () => {
           title="Neurodiversity in the Workplace with Shea Belsky"
         />
         <WorkRow
+          backgroundColor="red.500"
+          dates="May 23, 2023"
+          href="https://aane.org/"
+          linkVariant="basic"
+          subtitle="Association for Autism and Neurodiversity (AANE) and Massachusetts Rehabilitation Coalition (MRC)"
+          title="AANE and MRC Workshop: In Our Own Words"
+        />
+        <WorkRow
           backgroundColor="yellow.500"
           dates="April 26, 2023"
           href="https://www.novartis.com/about/diversity-equity-inclusion/inclusivity"
