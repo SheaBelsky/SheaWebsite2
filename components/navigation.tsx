@@ -48,7 +48,7 @@ const Navigation = () => {
       alignItems="center"
       as="nav"
       background={useColorModeValue("orange.shea", "gray.900")}
-      columns={{ base: 2, md: 3 }}
+      columns={2}
       height={16}
       justifyContent="space-between"
       paddingX={4}
