@@ -44,7 +44,7 @@ const HomeComponent = () => (
     <Flex order={{ base: 1, md: 2 }} width={{ base: "100%", md: "30%" }}>
       <Box alignItems="center" display="flex" justifyContent="center">
         <Image
-          alt="Shea Belsky wearing a Pac-Man suit & tie against an orange background"
+          alt="Shea Belsky wearing a red suit, black shirt, and black tie against a beige background."
           height="200"
           priority
           src="/shea_headshot.jpg"
