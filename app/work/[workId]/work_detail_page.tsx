@@ -13,7 +13,7 @@ import type { WorkShape } from "../../../lib/work_data";
 const WorkDetailPage = (props: WorkShape) => (
   <Fragment>
     <Heading as="h1">{props.company}</Heading>
-    <Heading as="h2" fontWeight="medium" size="md">
+    <Heading as="h2" fontSize="24px" fontWeight="medium" size="md">
       {props.title}
     </Heading>
     <Heading as="h3" fontWeight="light" size="sm">
@@ -32,7 +32,13 @@ const WorkDetailPage = (props: WorkShape) => (
 
       {props.readingLinks.length > 0 && (
         <Fragment>
-          <Heading as="h2" fontWeight="medium" marginTop="20px" size="md">
+          <Heading
+            as="h2"
+            fontSize="18px"
+            fontWeight="medium"
+            marginTop="20px"
+            size="md"
+          >
             Reading
           </Heading>
           <UnorderedList>

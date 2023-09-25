@@ -110,9 +110,10 @@ const Navigation = () => {
         >
           <NavLink href="/photography">Photography</NavLink>
           <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
-            Resumé
+            Resume
           </NavLink>
           <NavLink href="/talks">Speaking</NavLink>
+          <NavLink href="/news">In the News</NavLink>
           <NavLink href="/work">Work</NavLink>
         </Flex>
       </Flex>
@@ -124,9 +125,10 @@ const Navigation = () => {
       >
         <NavLink href="/photography">Photography</NavLink>
         <NavLink href="/shea_belsky_resume_2022.pdf" isExternal>
-          Resumé
+          Resume
         </NavLink>
         <NavLink href="/talks">Speaking</NavLink>
+        <NavLink href="/news">In the News</NavLink>
         <NavLink href="/work">Work</NavLink>
       </Flex>
 
