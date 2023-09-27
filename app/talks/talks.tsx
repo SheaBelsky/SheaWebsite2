@@ -17,7 +17,7 @@ const TalksComponent = () => {
         <Link href="mailto:hello@sheabelsky.com">hello@sheabelsky.com</Link>.
       </Text>
 
-      <Heading as="h2" fontSize="24px" marginY={5}>
+      <Heading as="h2" fontSize="24px" id="speaking" marginY={5}>
         Speaking Engagements
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
@@ -103,7 +103,7 @@ const TalksComponent = () => {
         />
       </SimpleGrid>
 
-      <Heading as="h2" fontSize="24px" marginY={5}>
+      <Heading as="h2" fontSize="24px" id="podcasts" marginY={5}>
         Podcasts
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
