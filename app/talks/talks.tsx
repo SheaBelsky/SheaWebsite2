@@ -22,7 +22,7 @@ const TalksComponent = () => {
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
-          backgroundColor="yellow.500"
+          backgroundColor="teal.500"
           dates="November 1, 2023"
           href="https://www.novartis.com/about/diversity-equity-inclusion/inclusivity"
           linkVariant="basic"
@@ -130,6 +130,14 @@ const TalksComponent = () => {
           linkVariant="basic"
           subtitle="Gaining the Technology Leadership Edge"
           title="Creating a Neuro Inclusive Workplace"
+        />
+        <WorkRow
+          backgroundColor="yellow.400"
+          dates="October 3, 2023"
+          href="https://open.spotify.com/episode/292aPeh6nKOWPVYrweBI1U"
+          linkVariant="basic"
+          subtitle="S2E9: Neurodivergence and autism at Work: Unpacking the Challenges and Triumphs"
+          title="Let's Break Up - Toxic Workplace Stories"
         />
         <WorkRow
           backgroundColor="cyan.600"
