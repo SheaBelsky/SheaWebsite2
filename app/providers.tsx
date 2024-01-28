@@ -1,22 +1,21 @@
 "use client";
-import { Fragment, ReactNode } from "react";
+
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
-import chakraTheme from "../lib/theme";
+import { Fragment, ReactNode } from "react";
 import BaseLayout from "../components/base_layout";
+import chakraTheme from "../lib/theme";
 
 interface Props {
   children: ReactNode;
 }
 
-const Providers = (props: Props) => {
-  return (
-    <Fragment>
-      <ColorModeScript initialColorMode={chakraTheme.initialColorMode} />
-      <ChakraProvider resetCSS theme={chakraTheme}>
-        <BaseLayout>{props.children}</BaseLayout>
-      </ChakraProvider>
-    </Fragment>
-  );
-};
+const Providers = (props: Props) => (
+  <Fragment>
+    <ColorModeScript initialColorMode={chakraTheme.initialColorMode} />
+    <ChakraProvider resetCSS theme={chakraTheme}>
+      <BaseLayout>{props.children}</BaseLayout>
+    </ChakraProvider>
+  </Fragment>
+);
 
 export default Providers;

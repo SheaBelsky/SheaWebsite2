@@ -1,8 +1,8 @@
 "use client";
 import { Button, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Fragment, useState } from "react";
+import { Image } from "@chakra-ui/next-js";
 import PHOTO_DATA, { type ImageShape } from "../../lib/photo_data";
-import Image from "next/image";
 // Dynamic imports don't work well in Next.js 13. Need to debug this more.
 import PhotoModal from "../../components/photo_modal";
 

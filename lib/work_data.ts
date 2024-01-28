@@ -96,12 +96,12 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
     company: "Mentra",
     dates: "March 2020 - present",
     description:
-      "I am the Tech Lead for Mentra's engineering team, whose goal is to create a hiring platform for people with autism. By 2025, Mentra aims to have employ 100,000 talented autistic individuals! As Tech lead, I work with leadership, experience design, and QA to develop, plan, and execute an engineering roadmap to onboard candidates and recruiters to our platform.",
+      "I am the Chief Technology Officer for Mentra's engineering team, whose goal is to create a hiring platform for people with autism. By 2025, Mentra aims to have employ 100,000 talented autistic individuals! As CTO, I work with leadership, experience design, and QA to develop, plan, and execute an engineering roadmap to onboard candidates and recruiters to our platform.",
     readingLinks: [
       {
         description: "Mentra's homepage",
-        href: "https://www.mentra.me/",
-        title: "Mentra.me"
+        href: "https://www.mentra.com/",
+        title: "Mentra.com"
       },
       {
         description: "Feature of Mentra on the Microsoft Accessibility Blog",
@@ -114,6 +114,18 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
         href: "https://acl.gov/news-and-events/announcements/acl-awards-grand-prize-inclusive-talent-pipeline-american-businesses",
         title:
           "ACL Awards Grand Prize in the 'Inclusive Talent Pipeline for American Businesses' Challenge"
+      },
+      {
+        description:
+          "Feature on Microsoft's Unlocked website about neurodiversity and Mentra",
+        href: "https://unlocked.microsoft.com/mentra-neuroinclusion/",
+        title: "Microsoft: The future of work is neurodiverse"
+      },
+      {
+        description: "TechCrunch feature on Mentra's Seed Round",
+        href: "https://techcrunch.com/2023/09/05/sam-altman-backed-startup-aims-to-match-neurodivergent-jobseekers-with-ideal-jobs/?guccounter=1",
+        title:
+          "Sam Altman-backed Mentra aims to match neurodivergent jobseekers with ideal jobs"
       }
     ],
     title: "Chief Technology Officer, ex Tech/Engineering Lead"

@@ -2,13 +2,13 @@ import {
   chakra,
   Flex,
   IconButton,
-  Link,
   LinkProps,
   SimpleGrid,
   useColorModeValue
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { ReactNode, useState } from "react";
+import { Link } from "@chakra-ui/next-js";
+import { type ReactNode, useState } from "react";
 import NextLink from "next/link";
 
 interface NavLinkProps extends LinkProps {

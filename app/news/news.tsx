@@ -1,6 +1,8 @@
 "use client";
-import { Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
+
 import { Fragment } from "react";
+import { Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import WorkRow from "../../components/work_row";
 
 const NewsComponent = () => {
@@ -32,6 +34,14 @@ const NewsComponent = () => {
           linkVariant="basic"
           subtitle="Neurodiversity in the Workforce: Shea Belsky Of Mentra On Why It's Important To Include Neurodiverse Employees & How To Make Your Workplace More Neuro-Inclusive"
           title="Authority Magazine"
+        />{" "}
+        <WorkRow
+          backgroundColor="yellow.600"
+          dates="August 16, 2023"
+          href="https://www.collegerecruiter.com/blog/2023/08/16/9-ways-for-employers-to-make-their-job-postings-friendlier-to-those-who-are-neurodivergent"
+          linkVariant="basic"
+          subtitle="9 ways for employers to make their job postings friendlier to those who are neurodivergent"
+          title="College Recruiter"
         />
         <WorkRow
           backgroundColor="red.500"

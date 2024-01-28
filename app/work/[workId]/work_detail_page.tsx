@@ -1,14 +1,9 @@
 "use client";
-import {
-  Box,
-  Heading,
-  Link,
-  ListItem,
-  Text,
-  UnorderedList
-} from "@chakra-ui/react";
-import { Fragment } from "react";
+
 import type { WorkShape } from "../../../lib/work_data";
+import { Box, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Fragment } from "react";
+import { Link } from "@chakra-ui/next-js";
 
 const WorkDetailPage = (props: WorkShape) => (
   <Fragment>

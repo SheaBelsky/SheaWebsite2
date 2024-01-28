@@ -1,6 +1,8 @@
 "use client";
-import { Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
+
 import { Fragment } from "react";
+import { Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import WorkRow from "../../components/work_row";
 
 const TalksComponent = () => {
@@ -123,6 +125,14 @@ const TalksComponent = () => {
         Podcasts
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
+        <WorkRow
+          backgroundColor="green.600"
+          dates="January 25, 2024"
+          href="https://open.spotify.com/show/3HSSAyNC7vUir0ExHZSXcu"
+          linkVariant="basic"
+          subtitle="Talent Empowerment Podcast with Tom Finn"
+          title="Neurodiversity in the Workplace"
+        />
         <WorkRow
           backgroundColor="red.600"
           dates="October 11, 2023"
