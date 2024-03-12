@@ -24,6 +24,14 @@ const TalksComponent = () => {
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="red.700"
+          dates="March 10, 2024"
+          href="https://www.mitaimlconference.com/agenda"
+          linkVariant="basic"
+          subtitle="MIT AI & ML Conference"
+          title="AI x Inclusion"
+        />
+        <WorkRow
           backgroundColor="teal.500"
           dates="November 1, 2023"
           href="https://www.novartis.com/about/diversity-equity-inclusion/inclusivity"
@@ -128,7 +136,7 @@ const TalksComponent = () => {
         <WorkRow
           backgroundColor="green.600"
           dates="January 25, 2024"
-          href="https://open.spotify.com/show/3HSSAyNC7vUir0ExHZSXcu"
+          href="https://open.spotify.com/episode/4iQYggbqxTJCvRqSG5h2fW?si=g6UTIMR0TWaoTwemvJM4XA"
           linkVariant="basic"
           subtitle="Talent Empowerment Podcast with Tom Finn"
           title="Neurodiversity in the Workplace"
@@ -152,7 +160,7 @@ const TalksComponent = () => {
         <WorkRow
           backgroundColor="cyan.600"
           dates="June 5, 2023"
-          href="https://podcasters.spotify.com/pod/show/onthe-spectrum/episodes/Were-Employable---Shea-Belsky-CTO-of-Mentra--Episode-16-e259ibp/a-a9v2rlm"
+          href="https://www.youtube.com/watch?v=ZEk67mzfTI8"
           linkVariant="basic"
           subtitle="On The Spectrum"
           title={`"We're Employable" - Shea Belsky: CTO of Mentra`}
