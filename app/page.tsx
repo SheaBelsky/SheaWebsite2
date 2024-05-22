@@ -32,7 +32,7 @@ const HomeComponent = () => (
         <Link href="https://www.linkedin.com/in/sheabelsky/" isExternal>
           LinkedIn
         </Link>{" "}
-        or <Link href="mailto:hello@sheabelsky.com">email</Link>!
+        !
       </Text>
     </Flex>
     <Flex order={{ base: 1, md: 2 }} width={{ base: "100%", md: "30%" }}>

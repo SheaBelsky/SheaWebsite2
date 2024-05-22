@@ -2,7 +2,6 @@
 
 import { Fragment } from "react";
 import { Heading, SimpleGrid, Text } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/next-js";
 import WorkRow from "../../components/work_row";
 
 const NewsComponent = () => {
@@ -15,10 +14,17 @@ const NewsComponent = () => {
         I take a lot of pride in getting the word out about neurodiversity,
         accessibility, and entrepreneurship. If your organization wants to level
         up their neuroinclusion and accessibility efforts, please reach out to
-        me at{" "}
-        <Link href="mailto:hello@sheabelsky.com">hello@sheabelsky.com</Link>.
+        me: hello(at)sheabelsky.com.
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
+        <WorkRow
+          backgroundColor="orange.600"
+          dates="February 6, 2024"
+          href="https://www.ceigateway.com/15-unique-perks-proven-to-attract-and-retain-talent/"
+          linkVariant="basic"
+          subtitle="15 Unique Perks Proven To Attract And Retain Talent"
+          title="Center for Entrepreneurial Innovation (Maricopa Community College)"
+        />
         <WorkRow
           backgroundColor="green.400"
           dates="September 5, 2023"

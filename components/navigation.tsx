@@ -112,6 +112,7 @@ const Navigation = () => {
             One Sheet
           </NavLink>
           <NavLink href="/photography">Photography</NavLink>
+          <NavLink href="/podcasts">Podcasts</NavLink>
           <NavLink href="/talks">Speaking</NavLink>
           <NavLink href="/news">In the News</NavLink>
           <NavLink href="/work">Work</NavLink>
@@ -127,6 +128,7 @@ const Navigation = () => {
           One Sheet
         </NavLink>
         <NavLink href="/photography">Photography</NavLink>
+        <NavLink href="/podcasts">Podcasts</NavLink>
         <NavLink href="/talks">Speaking</NavLink>
         <NavLink href="/news">In the News</NavLink>
         <NavLink href="/work">Work</NavLink>
