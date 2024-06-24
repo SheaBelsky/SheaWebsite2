@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { GA_TRACKING_ID } from "../lib/gtag";
+import { Analytics } from "@vercel/analytics/react";
 import Providers from "./providers";
 
 interface Props {
@@ -25,25 +25,11 @@ const IndexLayout = (props: Props) => (
       <meta name="robots" content="index, follow" />
       <meta name="theme-color" content="orange" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });`
-        }}
-      />
       <title>Shea Belsky</title>
     </head>
     <body>
       <Providers>{props.children}</Providers>
+      <Analytics />
     </body>
   </html>
 );
