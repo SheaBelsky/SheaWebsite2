@@ -15,7 +15,7 @@ const WorkComponent = () => {
           dates="March 2020 - Present"
           href="/work/mentra"
           linkVariant="next"
-          subtitle="Chief Technology Officer, Tech Lead"
+          subtitle="Chief Technology Officer, Technical Founder"
           title="Mentra"
         />
         <WorkRow
@@ -39,7 +39,7 @@ const WorkComponent = () => {
           dates="October 2016 - May 2020"
           href="/work/ezra"
           linkVariant="next"
-          subtitle="Chief Technology & Information Officer"
+          subtitle="Cofounder, Chief Technology & Information Officer"
           title="Ezra"
         />
         <WorkRow
