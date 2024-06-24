@@ -23,8 +23,8 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
     company: "Ezra",
     dates: "October 2016 - May 2020",
     description: [
-      "Ezra Tech is a full-service solution for Science Olympiad event management. I am one of the co-founders of the platform, the CTO, and CIO. I actively develop and maintain the platform, provide customer support to users, work directly with customers and clients to onboard them to the platform, and attend the competitions of customers to ensure system uptime and speed.",
-      "As of April 2019, Ezra has hosted more than 100 Science Olympiad competitions, has over 2000 registered users, and hundreds of daily active users. Ezra will be the primary solution for logistics, scoring, and user management for the 2019 Science Olmpiad National Tournament."
+      "Ezra Tech was a full-service solution for Science Olympiad event management. I was one of the cofounders of the platform, the CTO, and CIO. I actively developed and maintained the platform, provided customer support to users, worked directly with customers and clients to onboard them to the platform, and attended the competitions of customers to ensure success and satisfaction.",
+      "As of 2020, Ezra hosted more than 150 Science Olympiad competitions, has over 3,000 registered users, and 1,000 monthly active users during competitions eason. Ezra was the primary solution for logistics, scoring, and user management for the 2019 Science Olmpiad National Tournament. Each tournament organizer saved 100 hours on average when using Ezra as compared to existing solutions."
     ],
     readingLinks: [
       {
@@ -34,7 +34,7 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
         title: "Science Olympiad: A case study"
       }
     ],
-    title: "Co-Founder, Chief Technology Officer, and Chief Information Officer"
+    title: "Cofounder, Chief Technology Officer, and Chief Information Officer"
   },
   google: {
     company: "Google",
@@ -63,7 +63,7 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
     company: "HubSpot",
     dates: "June 2021 - March 2022",
     description:
-      "I worked for HubSpot as a Senior Software Engineer I. I was a frontend engineer for the Social team, connecting HubSpot's customers and companies with social media analytics and putting the power of social media at their fingertips.",
+      "I worked for HubSpot as a Senior Software Engineer I. On the Social team, I connected HubSpot's customers and companies with social media analytics and putting the power of social media at their fingertips. I was also an accessibility advocate, presenting on the topic internally to a non-technical audience about the importance of accessibility, its impact and benefits to customers, and how to think like an a11y.",
     readingLinks: [
       {
         description:
@@ -84,19 +84,21 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
   },
   ibm: {
     company: "IBM Watson",
-    dates: "June - August 2015 and 2016",
+    dates: "June - August 2016 and 2017",
     description: [
-      "Summer 2016 - I worked in IBM Watson's Astor Place office, developing tools and prototypes that implemented various Watson services and offerings. With the Advanced Client Technology and Solutions team, I developed a video summarization algorithm, API, and web client, and presented my findings to team members and IBM Watson offering management.",
-      "Summer 2015 - During the summer of 2016, I worked in IBM Watson's Littleton Office on the Watson Engagement Advisor App Squad. Here, I add the ability for users to speak to the Watson Conversation Car Dashboard demo with their computer's microphone. This functionality more realistically emulates how clients would interact with Watson in a car, versus only being able to communicate with a keyboard. I also worked on a Pokemon GO chat application that enabled users to speak to a fascimile of Professor Oak from Pokemon, and ask it questions regarding Pokemon GO."
+      "Summer 2017 - I worked in IBM Watson's Astor Place office, developing tools and prototypes that implemented various Watson services and offerings. With the Advanced Client Technology and Solutions team, I developed a video summarization algorithm, API, and web client, and presented my findings to team members and IBM Watson offering management.",
+      "Summer 2016 - During the summer of 2016, I worked in IBM Watson's Littleton Office on the Watson Engagement Advisor App Squad. Here, I add the ability for users to speak to the Watson Conversation Car Dashboard demo with their computer's microphone. This functionality more realistically emulates how clients would interact with Watson in a car, versus only being able to communicate with a keyboard. I also worked on a Pokemon GO chat application that enabled users to speak to a fascimile of Professor Oak from Pokemon, and ask it questions regarding Pokemon GO."
     ],
     readingLinks: [],
     title: "Front End Web Development Intern"
   },
   mentra: {
     company: "Mentra",
-    dates: "March 2020 - present",
-    description:
-      "I am the Chief Technology Officer for Mentra's engineering team, whose goal is to create a hiring platform for people with autism. By 2025, Mentra aims to have employ 100,000 talented autistic individuals! As CTO, I work with leadership, experience design, and QA to develop, plan, and execute an engineering roadmap to onboard candidates and recruiters to our platform.",
+    dates: "March 2022 - present",
+    description: [
+      "I am the Chief Technology Officer for Mentra's engineering team, whose goal is to create a hiring platform for neurodivergent jobseekers. As Chief Technology Officer, I implement the product vision for Mentra’s web app from its conception, working closely with product, analytics, ops, marketing, and sales.",
+      "I recruited, grew, and have retained a team of 4 software engineers, fostered positive developer experience, maintained sprint backlog, and set team goals & deadlines. Additionally, I created processes for release cycles, automated/manual/regression testing, A/B experiments, documentation, retrospectives, CI/CD, alerting, and compliance (SOC2, GDPR, CCPA, etc.)"
+    ],
     readingLinks: [
       {
         description: "Mentra's homepage",
@@ -128,14 +130,16 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
           "Sam Altman-backed Mentra aims to match neurodivergent jobseekers with ideal jobs"
       }
     ],
-    title: "Chief Technology Officer, ex Tech/Engineering Lead"
+    title: "Chief Technology Officer, Technical Founder"
   },
   wayfair: {
     company: "Wayfair",
     dates: "March 2019 - June 2021",
     description: [
-      "I am a member of the Stores and Geos team, which maintains and improves upon the experiences for Wayfair's Specialty Retail Brands and International stores. I work with different teams from across Wayfair in order to tailor each part of Wayfair's platform to the unique needs and expectations of each store. I collaborate heavily with product managers, experience designers & researchers, business intelligence, analytics, and QA to develop and execute upon projects that are specific to Wayfair's broad range of stores. I previously worked on the Home Services (February 2020 - July 2020) and Design Services (March 2019 - February 2020) teams.",
-      "I was also the Tech Lead for Awesome Learning, a front-end-web focused learning platform created by current and former members of Wayfair Engineering. It hosts interactive courses on topics such as CSS, JavaScript Unit Testing, React Hooks, and much more. As the Tech Lead, I am responsible for maintaining our platform, working with engineers to develop new content, and execute upon projects to grow Awesome Learning within Wayfair and the rest of the engineering community at large."
+      "I was a member of the Stores and Geos team, which maintains and improves upon the experiences for Wayfair's Specialty Retail Brands and International stores. I worked with different teams from across Wayfair in order to tailor each part of Wayfair's platform to the unique needs and expectations of each store. I collaborated heavily with product managers, experience designers & researchers, business intelligence, analytics, and QA to develop and execute upon projects that are specific to Wayfair's broad range of stores.",
+      "I was the DRI (Directly Responsible Individual) for the Product Card Overhaul project, reimagining the product preview experience on Wayfair’s specialty stores (10,00,000+ MAU), rapidly experimenting and iterating post release to maximize learnings and success.",
+      "I previously worked on the Home Services team (February 2020 - July 2020) and Design Services team (March 2019 - February 2020).",
+      "I was also the Tech Lead for Awesome Learning, a front-end-web focused learning platform created by current and former members of Wayfair Engineering. It hosted interactive courses on topics such as CSS, JavaScript Unit Testing, React Hooks, and much more. As the Tech Lead, I was responsible for maintaining our platform, working with engineers to develop new content, and executed upon projects to grow Awesome Learning within Wayfair and the rest of the engineering community."
     ],
     readingLinks: [
       {
