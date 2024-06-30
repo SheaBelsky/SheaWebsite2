@@ -111,7 +111,6 @@ const Navigation = () => {
           <NavLink href="/shea_belsky_one_sheet.pdf" isExternal>
             One Sheet
           </NavLink>
-          <NavLink href="/photography">Photography</NavLink>
           <NavLink href="/podcasts">Podcasts</NavLink>
           <NavLink href="/talks">Speaking</NavLink>
           <NavLink href="/news">In the News</NavLink>
@@ -127,7 +126,6 @@ const Navigation = () => {
         <NavLink href="/shea_belsky_one_sheet.pdf" isExternal>
           One Sheet
         </NavLink>
-        <NavLink href="/photography">Photography</NavLink>
         <NavLink href="/podcasts">Podcasts</NavLink>
         <NavLink href="/talks">Speaking</NavLink>
         <NavLink href="/news">In the News</NavLink>

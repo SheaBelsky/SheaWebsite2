@@ -16,10 +16,6 @@ const TalksComponent = () => {
         organization wants to level up their neuroinclusion and accessibility
         efforts, please reach out to me: hello(at)sheabelsky.com.
       </Text>
-
-      <Heading as="h2" fontSize="24px" id="speaking" marginY={5}>
-        Speaking Engagements
-      </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
           backgroundColor="green.400"
