@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
-import { type ReactNode, useState } from "react";
+import { type ReactNode, useState, useCallback } from "react";
 import NextLink from "next/link";
 
 interface NavLinkProps extends LinkProps {
@@ -41,7 +41,12 @@ const NavLink = (props: NavLinkProps) => (
 );
 
 const Navigation = () => {
-  const [display, changeDisplay] = useState("none");
+  const [display, changeDisplay] = useState<"none" | "flex">("none");
+
+  const toggleMobileNav = useCallback(
+    () => changeDisplay((oldState) => (oldState === "flex" ? "none" : "flex")),
+    []
+  );
 
   return (
     <SimpleGrid
@@ -72,7 +77,7 @@ const Navigation = () => {
         display={{ base: "flex", md: "none" }}
         icon={<HamburgerIcon color="white" />}
         justifyContent="flex-end"
-        onClick={() => changeDisplay("flex")}
+        onClick={toggleMobileNav}
         size="lg"
         variant="ghost"
       />
@@ -96,7 +101,7 @@ const Navigation = () => {
             icon={<CloseIcon color="white" />}
             marginRight={2}
             marginTop={2}
-            onClick={() => changeDisplay("none")}
+            onClick={toggleMobileNav}
             size="lg"
             variant="ghost"
           />
@@ -108,13 +113,25 @@ const Navigation = () => {
           height="50%"
           justifyContent="space-between"
         >
-          <NavLink href="/shea_belsky_one_sheet.pdf" isExternal>
+          <NavLink
+            href="/shea_belsky_one_sheet.pdf"
+            isExternal
+            onClick={toggleMobileNav}
+          >
             One Sheet
           </NavLink>
-          <NavLink href="/podcasts">Podcasts</NavLink>
-          <NavLink href="/talks">Speaking</NavLink>
-          <NavLink href="/news">In the News</NavLink>
-          <NavLink href="/work">Work</NavLink>
+          <NavLink href="/podcasts" onClick={toggleMobileNav}>
+            Podcasts
+          </NavLink>
+          <NavLink href="/talks" onClick={toggleMobileNav}>
+            Speaking
+          </NavLink>
+          <NavLink href="/news" onClick={toggleMobileNav}>
+            In the News
+          </NavLink>
+          <NavLink href="/work" onClick={toggleMobileNav}>
+            Work
+          </NavLink>
         </Flex>
       </Flex>
 
@@ -131,18 +148,6 @@ const Navigation = () => {
         <NavLink href="/news">In the News</NavLink>
         <NavLink href="/work">Work</NavLink>
       </Flex>
-
-      {/* Desktop Light/Dark Mode toggle */}
-      {/* <Flex display={{ base: "none", md: "flex" }} justifyContent="flex-end">
-        <Button
-          aria-label={
-            colorMode === "light" ? "Turn to dark mode" : "Turn to light mode"
-          }
-          onClick={toggleColorMode}
-        >
-          {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-        </Button>
-      </Flex> */}
     </SimpleGrid>
   );
 };
