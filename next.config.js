@@ -10,7 +10,7 @@ const nextConfig = {
   },
   redirects: async () => ([
     {
-      destination: 'https://calendly.com/shea-belsky/30min',
+      destination: 'https://calendly.com/hello-sheabelsky/30min',
       source: '/meet',
       permanent: false,
     }
