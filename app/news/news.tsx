@@ -18,44 +18,60 @@ const NewsComponent = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="purple.600"
+          dates="July 12, 2024"
+          href="https://www.hrgrapevine.com/us/content/article/2024-07-12-the-worlds-largest-hr-body-wants-to-change-ied-to-just-id-hr-pros-really-arent-happy-about-it"
+          linkVariant="basic"
+          subtitle="The world's largest HR body wants to change IE&D to just I&D. HR pros really aren't happy about it"
+          title="HR Grapevine"
+        />
+        <WorkRow
+          backgroundColor="blue.600"
+          dates="July 1, 2024"
+          href="https://www.topcollegeconsultants.com/wp-content/uploads/2024/02/JCA-Winter24-ConfidentandEmpowered-1.pdf"
+          linkVariant="basic"
+          subtitle="Confident and Empowered: College Counseling for Autistic Students"
+          title="Eric Endlich for the Journal of College Admissions"
+        />
+        <WorkRow
           backgroundColor="orange.600"
           dates="February 6, 2024"
           href="https://www.ceigateway.com/15-unique-perks-proven-to-attract-and-retain-talent/"
           linkVariant="basic"
-          subtitle="15 Unique Perks Proven To Attract And Retain Talent"
-          title="Center for Entrepreneurial Innovation (Maricopa Community College)"
+          subtitle="Center for Entrepreneurial Innovation (Maricopa Community College)"
+          title="15 Unique Perks Proven To Attract And Retain Talent"
         />
         <WorkRow
           backgroundColor="green.400"
           dates="September 5, 2023"
           href="https://techcrunch.com/2023/09/05/sam-altman-backed-startup-aims-to-match-neurodivergent-jobseekers-with-ideal-jobs/"
           linkVariant="basic"
-          subtitle="Sam Altman-backed Mentra aims to match neurodivergent jobseekers with ideal jobs"
-          title="TechCrunch"
+          subtitle="TechCrunch"
+          title="Sam Altman-backed Mentra aims to match neurodivergent jobseekers with ideal jobs"
         />
         <WorkRow
           backgroundColor="black"
           dates="August 20, 2023"
           href="https://medium.com/authority-magazine/neurodiversity-in-the-workforce-shea-belsky-of-mentra-on-why-its-important-to-include-95cad997ae8"
           linkVariant="basic"
-          subtitle="Neurodiversity in the Workforce: Shea Belsky Of Mentra On Why It's Important To Include Neurodiverse Employees & How To Make Your Workplace More Neuro-Inclusive"
-          title="Authority Magazine"
-        />{" "}
+          subtitle="Authority Magazine"
+          title="Neurodiversity in the Workforce: Shea Belsky Of Mentra On Why It's Important To Include Neurodiverse Employees & How To Make Your Workplace More Neuro-Inclusive"
+        />
         <WorkRow
           backgroundColor="yellow.600"
           dates="August 16, 2023"
           href="https://www.collegerecruiter.com/blog/2023/08/16/9-ways-for-employers-to-make-their-job-postings-friendlier-to-those-who-are-neurodivergent"
           linkVariant="basic"
-          subtitle="9 ways for employers to make their job postings friendlier to those who are neurodivergent"
-          title="College Recruiter"
+          subtitle="College Recruiter"
+          title="9 ways for employers to make their job postings friendlier to those who are neurodivergent"
         />
         <WorkRow
           backgroundColor="red.500"
           dates="June 13, 2023"
           href="https://nypost.com/2023/06/11/neurodiversity-adds-to-the-workplace/"
           linkVariant="basic"
-          subtitle="Neurodiversity adds to the workplace, as these successes show"
-          title="New York Post"
+          subtitle="New York Post"
+          title="Neurodiversity adds to the workplace, as these successes show"
         />
         <WorkRow
           backgroundColor="#105CAB"
