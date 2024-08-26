@@ -22,16 +22,16 @@ const NewsComponent = () => {
           dates="July 12, 2024"
           href="https://www.hrgrapevine.com/us/content/article/2024-07-12-the-worlds-largest-hr-body-wants-to-change-ied-to-just-id-hr-pros-really-arent-happy-about-it"
           linkVariant="basic"
-          subtitle="The world's largest HR body wants to change IE&D to just I&D. HR pros really aren't happy about it"
-          title="HR Grapevine"
+          subtitle="HR Grapevine"
+          title="The world's largest HR body wants to change IE&D to just I&D. HR pros really aren't happy about it"
         />
         <WorkRow
           backgroundColor="blue.600"
           dates="July 1, 2024"
           href="https://www.topcollegeconsultants.com/wp-content/uploads/2024/02/JCA-Winter24-ConfidentandEmpowered-1.pdf"
           linkVariant="basic"
-          subtitle="Confident and Empowered: College Counseling for Autistic Students"
-          title="Eric Endlich for the Journal of College Admissions"
+          subtitle="Eric Endlich for the Journal of College Admissions"
+          title="Confident and Empowered: College Counseling for Autistic Students"
         />
         <WorkRow
           backgroundColor="orange.600"

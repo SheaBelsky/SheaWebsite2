@@ -94,7 +94,7 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
   },
   mentra: {
     company: "Mentra",
-    dates: "March 2022 - present",
+    dates: "March 2022 - August 2024",
     description: [
       "I am the Chief Technology Officer for Mentra's engineering team, whose goal is to create a hiring platform for neurodivergent jobseekers. As Chief Technology Officer, I implement the product vision for Mentra’s web app from its conception, working closely with product, analytics, ops, marketing, and sales.",
       "I recruited, grew, and have retained a team of 4 software engineers, fostered positive developer experience, maintained sprint backlog, and set team goals & deadlines. Additionally, I created processes for release cycles, automated/manual/regression testing, A/B experiments, documentation, retrospectives, CI/CD, alerting, and compliance (SOC2, GDPR, CCPA, etc.)"

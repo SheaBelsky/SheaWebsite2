@@ -12,7 +12,7 @@ const WorkComponent = () => {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
           backgroundColor="#D27CB3"
-          dates="March 2020 - Present"
+          dates="March 2020 - August 2024"
           href="/work/mentra"
           linkVariant="next"
           subtitle="Chief Technology Officer, Technical Founder"

@@ -18,6 +18,14 @@ const TalksComponent = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="yellow.500"
+          dates="August 15, 2024"
+          href="https://lu.ma/63mo28ik"
+          linkVariant="basic"
+          subtitle="Nova, Chief of Staff"
+          title="Nova Chat: Neurodivergence in the C-Suite, Sponsored by Mentra"
+        />
+        <WorkRow
           backgroundColor="green.400"
           dates="May 16, 2024"
           href="https://www.linkedin.com/events/7190847456299962369/comments/"
