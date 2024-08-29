@@ -20,7 +20,7 @@ const HomeComponent = () => (
         inclusion for everyone.
       </Text>
       <Text marginTop="20px">
-        I'm the Chief Technology Officer for{" "}
+        I'm the former Chief Technology Officer for{" "}
         <Link href="https://www.mentra.com" isExternal>
           Mentra
         </Link>

@@ -36,7 +36,7 @@ const TalksComponent = () => {
         <WorkRow
           backgroundColor="green.600"
           dates="January 25, 2024"
-          href="https://open.spotify.com/episode/4iQYggbqxTJCvRqSG5h2fW?si=g6UTIMR0TWaoTwemvJM4XA"
+          href="https://www.youtube.com/watch?v=aBkjPzkuk24"
           linkVariant="basic"
           subtitle="Talent Empowerment Podcast with Tom Finn"
           title="Neurodiversity in the Workplace"
