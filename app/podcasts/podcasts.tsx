@@ -18,6 +18,30 @@ const TalksComponent = () => {
 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="green.500"
+          dates="September 13, 2024"
+          href="https://www.youtube.com/watch?v=LSCjEuug9Pc"
+          linkVariant="basic"
+          subtitle="Uplevel Mind"
+          title="Navigating Effective Leadership as a Neurodivergent Business Owner"
+        />
+        <WorkRow
+          backgroundColor="teal.300"
+          dates="September 12, 2024"
+          href="https://hrdleadership.com/183-neurodiversity-at-work-making-the-conversation-more-approachable-and-less-intimidating-with-shea-belsky"
+          linkVariant="basic"
+          subtitle="Being [at Work]"
+          title="Neurodiversity [at Work]: Making the Conversation More Approachable and Less Intimidating with Shea Belsky"
+        />
+        <WorkRow
+          backgroundColor="pink.700"
+          dates="September 12, 2024"
+          href="https://open.spotify.com/episode/0sJa0qEobbRwnlkn967QMm"
+          linkVariant="basic"
+          subtitle="World Changemaker"
+          title="Championing Neurodiversity Talent in the Workplace"
+        />
+        <WorkRow
           backgroundColor="red.600"
           dates="May 14, 2024"
           href="https://shows.acast.com/imustbebugn/episodes/it-must-be-a-conversation-with-shea-belsky"

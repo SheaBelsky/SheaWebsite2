@@ -61,9 +61,11 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
   },
   hubspot: {
     company: "HubSpot",
-    dates: "June 2021 - March 2022",
-    description:
-      "I worked for HubSpot as a Senior Software Engineer I. On the Social team, I connected HubSpot's customers and companies with social media analytics and putting the power of social media at their fingertips. I was also an accessibility advocate, presenting on the topic internally to a non-technical audience about the importance of accessibility, its impact and benefits to customers, and how to think like an a11y.",
+    dates: "June 2021 - March 2022, September 2024 - present",
+    description: [
+      "As of 2024, I'm on the Service Hub team working on their Onboarding & Customization team!",
+      "From 2021-2022, I worked for HubSpot as a Senior Software Engineer I. On the Social team, I connected HubSpot's customers and companies with social media analytics and putting the power of social media at their fingertips. I was also an accessibility advocate, presenting on the topic internally to a non-technical audience about the importance of accessibility, its impact and benefits to customers, and how to think like an a11y."
+    ],
     readingLinks: [
       {
         description:
@@ -80,7 +82,7 @@ const WORK_DATA: Record<WorkId, WorkShape> = {
           "A Web Accessibility Checklist to Make Your Content 100% Compliant"
       }
     ],
-    title: "Senior Software Engineer I"
+    title: "Senior Software Engineer II"
   },
   ibm: {
     company: "IBM Watson",

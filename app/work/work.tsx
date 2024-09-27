@@ -11,20 +11,20 @@ const WorkComponent = () => {
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="#FF7A59"
+          dates="June 2021 - March 2022, September 2024 - Present"
+          href="/work/hubspot"
+          linkVariant="next"
+          subtitle="Senior Software Engineer II"
+          title="HubSpot"
+        />
+        <WorkRow
           backgroundColor="#D27CB3"
           dates="March 2020 - August 2024"
           href="/work/mentra"
           linkVariant="next"
           subtitle="Chief Technology Officer, Technical Founder"
           title="Mentra"
-        />
-        <WorkRow
-          backgroundColor="#FF7A59"
-          dates="June 2021 - March 2022"
-          href="/work/hubspot"
-          linkVariant="next"
-          subtitle="Senior Software Engineer I"
-          title="HubSpot"
         />
         <WorkRow
           backgroundColor="#7F187F"
