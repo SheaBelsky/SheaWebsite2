@@ -42,6 +42,14 @@ const NewsComponent = () => {
           title="15 Unique Perks Proven To Attract And Retain Talent"
         />
         <WorkRow
+          backgroundColor="blue.300"
+          dates="November 24, 2023"
+          href="https://www.oecd-ilibrary.org/employment/using-ai-to-support-people-with-disability-in-the-labour-market_008b32b7-en"
+          linkVariant="basic"
+          subtitle="Organisation for Economic Cooperation and Development"
+          title="Using AI to support people with disability in the labour market"
+        />
+        <WorkRow
           backgroundColor="green.400"
           dates="September 5, 2023"
           href="https://techcrunch.com/2023/09/05/sam-altman-backed-startup-aims-to-match-neurodivergent-jobseekers-with-ideal-jobs/"
@@ -104,6 +112,14 @@ const NewsComponent = () => {
           linkVariant="basic"
           subtitle="Scary Symptoms"
           title="Free Service Helps Autistic People Find Inclusive Employment"
+        />
+        <WorkRow
+          backgroundColor="#FF7A59"
+          dates="December 2021"
+          href="https://community.hubspot.com/t5/Community-Led-Events/Portsmouth-HUG-Becoming-an-A11y-Why-Accessibility-Matters-to/m-p/534978"
+          linkVariant="basic"
+          subtitle="HubSpot"
+          title="Becoming an A11y: Why Accessibility Matters to Everyone"
         />
         <WorkRow
           backgroundColor="#B31B1B"

@@ -35,7 +35,7 @@ const HomeComponent = () => (
         Let's get in touch through{" "}
         <Link href="https://www.linkedin.com/in/sheabelsky/" isExternal>
           LinkedIn
-        </Link>{" "}
+        </Link>
         !
       </Text>
     </Flex>
