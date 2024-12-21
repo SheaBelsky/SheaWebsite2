@@ -18,6 +18,14 @@ const NewsComponent = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="black"
+          dates="November 27, 2024"
+          href="https://www.forbes.com/sites/jenniferpalumbo/2024/11/27/is-being-neurodivergent-a-superpower-in-entrepreneurship/"
+          linkVariant="basic"
+          subtitle="Forbes, Jennifer Jay Palumbo"
+          title="Is Being Neurodivergent A Superpower In Entrepreneurship?"
+        />
+        <WorkRow
           backgroundColor="purple.600"
           dates="July 12, 2024"
           href="https://www.hrgrapevine.com/us/content/article/2024-07-12-the-worlds-largest-hr-body-wants-to-change-ied-to-just-id-hr-pros-really-arent-happy-about-it"

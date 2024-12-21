@@ -15,7 +15,7 @@ const WorkComponent = () => {
           dates="June 2021 - March 2022, September 2024 - Present"
           href="/work/hubspot"
           linkVariant="next"
-          subtitle="Senior Software Engineer II"
+          subtitle="Tech Lead II"
           title="HubSpot"
         />
         <WorkRow

@@ -20,8 +20,8 @@ const HomeComponent = () => (
         inclusion for everyone.
       </Text>
       <Text marginTop="20px">
-        Currently I work at HubSpot as a Senior Software Engineer II for the
-        Service Hub team.
+        Currently I work at HubSpot as a Tech Lead II on the Help Desk
+        Onboarding & Configuration team.
       </Text>
       <Text marginTop="20px">
         I'm the former Chief Technology Officer for{" "}
