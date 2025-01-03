@@ -18,6 +18,22 @@ const TalksComponent = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="blue.700"
+          dates="March 7, 2025"
+          href="https://www.spedchildmass.com/event/massachusetts-special-education-summit-collaborative-solutions-to-current-issues/"
+          linkVariant="basic"
+          subtitle="The League School"
+          title="Promoting Self-Confidence for Neurodiverse Graduates Entering the Workforce"
+        />
+        <WorkRow
+          backgroundColor="purple.500"
+          dates="October 28, 2024"
+          href="https://www.kennedykrieger.org/sites/default/files/library/documents/community/neruodiversity-at-work/neurodiversity-at-work-conference/NDW24%20Agenda_v13%20(1).pdf"
+          linkVariant="basic"
+          subtitle="Kennedy Krieger Institute"
+          title="Preparing and Developing Neurodivergent Employees for Leadership & Management in the Workplace"
+        />
+        <WorkRow
           backgroundColor="yellow.500"
           dates="August 15, 2024"
           href="https://lu.ma/63mo28ik"
