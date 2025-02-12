@@ -1,7 +1,7 @@
 "use client";
 
 import { Fragment } from "react";
-import { Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
 import WorkRow from "../../components/work_row";
 
 const TalksComponent = () => {
@@ -10,6 +10,15 @@ const TalksComponent = () => {
       <Heading as="h1" marginBottom="20px">
         Podcasts
       </Heading>
+      <Text marginY={5}>
+        I now host my own podcast! The{" "}
+        <Link href="https://autistic-techie.com" isExternal>
+          Autistic Techie
+        </Link>{" "}
+        podcast is now out on all major podcast hosting platforms! Listen to me
+        talk about neurodiversity in tech careers, interview guests from across
+        the industry, and more!
+      </Text>
       <Text marginY={5}>
         Podcasts are one of my favorite ways to connect with audiences, educate
         folks about neurodiversity, and promote meaningful conversations. Want
