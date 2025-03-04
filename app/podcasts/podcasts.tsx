@@ -27,6 +27,22 @@ const TalksComponent = () => {
 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="#120c0f"
+          dates="February 18, 2025"
+          href="https://podcast.ausha.co/neurodivergent-spot/neurodivergence-and-thriving-in-tech-with-shea-belsky"
+          linkVariant="basic"
+          subtitle="Neurodivergent Spot"
+          title="Neurodivergence and Thriving in Tech with Shea Belsky"
+        />
+        <WorkRow
+          backgroundColor="cyan.500"
+          dates="February 16, 2025"
+          href="https://www.youtube.com/watch?v=EIMdgjh4U0w"
+          linkVariant="basic"
+          subtitle="iElevate Your Career"
+          title="AI, Leadership & Inclusive Tech with 'Autistic Techie' Shea Belsky"
+        />
+        <WorkRow
           backgroundColor="green.500"
           dates="September 13, 2024"
           href="https://www.youtube.com/watch?v=LSCjEuug9Pc"

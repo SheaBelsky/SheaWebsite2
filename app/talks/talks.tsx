@@ -25,6 +25,23 @@ const TalksComponent = () => {
           subtitle="The League School"
           title="Promoting Self-Confidence for Neurodiverse Graduates Entering the Workforce"
         />
+
+        <WorkRow
+          backgroundColor="gray.700"
+          dates="February 19, 2025"
+          href="https://www.youtube.com/watch?v=-3Wz-ELTIxA"
+          linkVariant="basic"
+          subtitle="Davos Neurodiversity Summit"
+          title="Recording: Investing in People Through Person-Centered Management"
+        />
+        <WorkRow
+          backgroundColor="red.700"
+          dates="February 17, 2025"
+          href="https://www.naceweb.org/hbcu-and-inclusion-summit/index.html"
+          linkVariant="basic"
+          subtitle="NACE (National Association of Colleges and Employers)"
+          title="Barriers & Facilitators of Pre-Employment Interview Success in STEM Fields for Autistic Job Candidates: Autistic Employee and Employer"
+        />
         <WorkRow
           backgroundColor="purple.500"
           dates="October 28, 2024"
