@@ -18,6 +18,30 @@ const NewsComponent = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="green.300"
+          dates="May 2, 2025"
+          href="https://www.splinter.com/autistic-people-arent-monsters-or-magical-the-telepathy-tapes-are-just-as-bad-as-rfk"
+          linkVariant="basic"
+          subtitle="Splinter.com, Asha Dore"
+          title="Autistic People Aren’t Monsters Or Magical: The Telepathy Tapes Are Just as Bad as RFK"
+        />
+        <WorkRow
+          backgroundColor="blue.500"
+          dates="April 18, 2025"
+          href="https://www.dailymail.co.uk/health/article-14622303/parents-autistic-kids-surge-cases-rfk-jr-crisis.html"
+          linkVariant="basic"
+          subtitle="Daily Mail, Emily Joshu Sterne"
+          title="The truth about RFK's vow to expose hidden toxins that cause autism, according to parents"
+        />
+        <WorkRow
+          backgroundColor="yellow.600"
+          dates="January 27, 2025"
+          href="https://www.buzzfeed.com/ashleybroadwater1/elon-musk-autism-salute"
+          linkVariant="basic"
+          subtitle="BuzzFeed, Ashley Broadwater"
+          title="After Some People Claimed Elon Musk's Disturbing Salute Was Because Of Autism, Others With Autism Have Weighed In"
+        />
+        <WorkRow
           backgroundColor="black"
           dates="November 27, 2024"
           href="https://www.forbes.com/sites/jenniferpalumbo/2024/11/27/is-being-neurodivergent-a-superpower-in-entrepreneurship/"

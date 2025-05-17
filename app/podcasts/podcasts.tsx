@@ -27,6 +27,14 @@ const TalksComponent = () => {
 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="pink.300"
+          dates="April 9, 2025"
+          href="https://open.spotify.com/episode/3rTYfB4pneWEH5p2K5j62K?si=O_Y5LnYTTfOVh-NlbUzPjA"
+          linkVariant="basic"
+          subtitle="Chronically The Sickest"
+          title="Autism Spectrum Disorder (ASD) with Shea Belsky"
+        />
+        <WorkRow
           backgroundColor="#120c0f"
           dates="February 18, 2025"
           href="https://podcast.ausha.co/neurodivergent-spot/neurodivergence-and-thriving-in-tech-with-shea-belsky"
@@ -41,6 +49,14 @@ const TalksComponent = () => {
           linkVariant="basic"
           subtitle="iElevate Your Career"
           title="AI, Leadership & Inclusive Tech with 'Autistic Techie' Shea Belsky"
+        />
+        <WorkRow
+          backgroundColor="red.900"
+          dates="November 20, 2024"
+          href="https://www.youtube.com/watch?v=cFpldDzb9DI"
+          linkVariant="basic"
+          subtitle="Teen Minds Redefined"
+          title="Navigating Neurodiversity: Insights from Shea Belsky on Autism Advocacy"
         />
         <WorkRow
           backgroundColor="green.500"

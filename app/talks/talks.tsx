@@ -18,6 +18,22 @@ const TalksComponent = () => {
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} width="100%">
         <WorkRow
+          backgroundColor="blue.800"
+          dates="May 15, 2025"
+          href="https://x.com/BosTypeScript/status/1920115220304761266"
+          linkVariant="basic"
+          subtitle="Boston TS Club"
+          title="Neurodiversity and TypeScript"
+        />
+        <WorkRow
+          backgroundColor="purple.400"
+          dates="April 18, 2025"
+          href="https://www.linkedin.com/posts/neurodiversity-employment-partnership_employtheneurodiverse-neurodivergentemployment-activity-7319173019229163520-ADcv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA8kep0BCTKHHD9uWXxJ1t5uYSkzVcUcAGM"
+          linkVariant="basic"
+          subtitle="Neurodiversity Employment Partnership"
+          title="Support Neurodivergent Jobseekers and their Peers"
+        />
+        <WorkRow
           backgroundColor="blue.700"
           dates="March 7, 2025"
           href="https://www.spedchildmass.com/event/massachusetts-special-education-summit-collaborative-solutions-to-current-issues/"
@@ -25,7 +41,6 @@ const TalksComponent = () => {
           subtitle="The League School"
           title="Promoting Self-Confidence for Neurodiverse Graduates Entering the Workforce"
         />
-
         <WorkRow
           backgroundColor="gray.700"
           dates="February 19, 2025"
