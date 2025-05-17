@@ -69,7 +69,7 @@ const TalksComponent = () => {
         <WorkRow
           backgroundColor="teal.300"
           dates="September 12, 2024"
-          href="https://hrdleadership.com/183-neurodiversity-at-work-making-the-conversation-more-approachable-and-less-intimidating-with-shea-belsky"
+          href="https://open.spotify.com/episode/2ho1FtUmmByJKaM4eOiyCC?si=5db26fab193844d7"
           linkVariant="basic"
           subtitle="Being [at Work]"
           title="Neurodiversity [at Work]: Making the Conversation More Approachable and Less Intimidating with Shea Belsky"
